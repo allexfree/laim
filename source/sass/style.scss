@@ -1,14 +1,17 @@
 @import "../sass/general/normalize.scss";
 
-// If a grid system is needed, uncomment
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// @import "../../node_modules/bootstrap/scss/root";
-// @import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/grid";
 
 @import "../sass/general/variables.scss";
 @import "../sass/general/fonts.scss";
 @import "../sass/general/mixins.scss";
 @import "../sass/general/swiper.scss";
 @import "../sass/general/global.scss";
+
+@import "../sass/page-header.scss";
+@import "../sass/logo.scss";
