@@ -1,0 +1,16 @@
+@import "./general/variables.scss";
+
+.delivery-time {
+  position: relative;
+}
+
+.delivery-time__btn {
+  font-size: $font-size-bigger;
+  font-weight: $bold;
+  color: $second-color;
+}
+
+.delivery-time__icon {
+  margin-right: 10px;
+  fill: $third-color;
+}

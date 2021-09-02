@@ -1,0 +1,17 @@
+@import "./general/variables.scss";
+
+.delivery-zone {
+  position: relative;
+  margin-right: 43px;
+}
+
+.delivery-zone__btn {
+  font-size: $font-size-bigger;
+  font-weight: $bold;
+  color: $second-color;
+}
+
+.delivery-zone__icon {
+  margin-right: 10px;
+  fill: $third-color;
+}

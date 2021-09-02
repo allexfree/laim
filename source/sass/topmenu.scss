@@ -1,0 +1,12 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.topmenu-first {
+  position: relative;
+  margin: 12px 0 17px 0;
+}
+
+.topmenu-second__list {
+  @include reset-list;
+  display: flex;
+}

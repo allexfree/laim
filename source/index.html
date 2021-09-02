@@ -26,22 +26,159 @@
   <div class="container">
     <div class="page-header">
       <div class="row">
-        <div class="col-auto">
+        <div class="col-2">
           <div class="logo">
-            <img class="logo__img" src="./img/logo.svg" width="107" height="71" alt="Логотип.">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./img/logo.svg" width="107" height="71" alt="Логотип.">
+            </a>
           </div>
         </div>
-        <div class="col-auto">
-          <div class="row">
-            <div class="col-auto">
-              <div class="topmenu-first"></div>
+        <div class="col-10">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <nav class="topmenu-first">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <a class="phone" href="tel:+7756">
+                      <svg class="phone__icon" width="14" height="14">
+                        <use href="./img/sprite/sprite.svg#phone-call"></use>
+                      </svg>
+                      7756
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="delivery-zone">
+                      <button class="delivery-zone__btn btns" type="button">
+                        <svg class="delivery-zone__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#spot"></use>
+                        </svg>
+                        Зона доставки
+                      </button>
+                      <div class="delivery-zone__modal" hidden>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="delivery-time">
+                      <button class="delivery-time__btn btns" type="button">
+                        <svg class="delivery-time__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#clock"></use>
+                        </svg>
+                        17:00 - 17:45
+                      </button>
+                      <div class="delivery-time__modal" hidden>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </div>
-            <div class="col-auto">
-              <div class="topmenu-second"></div>
+            <div class="col-6">
+              <nav class="topmenu-second">
+                <ul class="topmenu-second__list">
+                  <li class="topmenu-second__list-item">
+                    <a class="topmenu-second__list_link" href="#">
+                      Шеф-лайм
+                    </a>
+                  </li>
+                  <li class="topmenu-second__list-item">
+                    <a class="topmenu-second__list_link" href="#">
+                      Вакансии
+                    </a>
+                  </li>
+                  <li class="topmenu-second__list-item">
+                    <a class="topmenu-second__list_link" href="#">
+                      Вопрос-ответ
+                    </a>
+                  </li>
+                  <li class="topmenu-second__list-item topmenu-second__list-item--active">
+                    <a class="topmenu-second__list_link" href="#">
+                      Бонусная программа
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
           <div class="row">
-
+            <div class="col-6">
+              <nav class="bottommenu-first">
+                <div class="row">
+                  <div class="col-3">
+                    <button class="menu-btn" type="button">
+                      <svg class="menu-btn__icon" width="14" height="14">
+                        <use href="./img/sprite/sprite.svg#loup-catalog"></use>
+                      </svg>
+                      Каталог
+                    </button>
+                  </div>
+                  <div class="col-9">
+                    <form class="form-main-search" method="POST">
+                      <label class="form-main-search__label">
+                        <input type="search" class="form-main-search__input" name="search">
+                        <button class="form-main-search__btn" type="submit" aria-label="Поиск">
+                          <svg class="form-main-search__btn-icon" width="14" height="14">
+                            <use href="./img/sprite/sprite.svg#loupe"></use>
+                          </svg>
+                        </button>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="col-6">
+              <nav class="bottommenu-second">
+                <ul class="bottommenu-second__list">
+                  <li class="bottommenu-second__list-item">
+                    <div class="discounts">
+                      <a class="discounts__link" href="#">
+                        <svg class="discounts__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#percent"></use>
+                        </svg>
+                        Скидки
+                      </a>
+                      <div class="discounts-modal" hidden="hidden"></div>
+                    </div>
+                  </li>
+                  <li class="bottommenu-second__list-item">
+                    <div class="account">
+                      <a class="account__link" href="#">
+                        <svg class="account__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#heart"></use>
+                        </svg>
+                        Кабинет
+                      </a>
+                      <div class="account-modal" hidden="hidden"></div>
+                    </div>
+                  </li>
+                  <li class="bottommenu-second__list-item">
+                    <div class="favourite">
+                      <a class="favourite__link" href="#">
+                        <svg class="favourite__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#user"></use>
+                        </svg>
+                        Избранное
+                      </a>
+                      <div class="favourite-modal" hidden="hidden"></div>
+                    </div>
+                  </li>
+                  <li class="bottommenu-second__list-item bottommenu-second__list-item--active">
+                    <div class="cart">
+                      <a class="cart__link" href="#">
+                        <svg class="cart__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#shopping-cart"></use>
+                        </svg>
+                        Корзина
+                      </a>
+                      <div class="cart-modal" hidden="hidden"></div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
