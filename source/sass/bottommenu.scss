@@ -1,0 +1,12 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.bottommenu-first,
+.bottommenu-second {
+  padding: 15px 0;
+}
+
+.bottommenu-second__list {
+  @include reset-list;
+  display: flex;
+}

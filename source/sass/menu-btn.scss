@@ -1,0 +1,15 @@
+@import "./general/variables.scss";
+
+.menu-btn {
+  max-width: 135px;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 10px;
+  background-color: $accent-color;
+  font-size: $font-size-bigger;
+  font-weight: $bold;
+}
+
+.menu-btn__icon {
+  margin-right: 15px;
+}

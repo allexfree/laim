@@ -8,26 +8,24 @@
   margin-right: 40px;
 }
 
-.topmenu-second__list-item--active {
-  & a {
-    color: $accent-color;
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      opacity: 0.8;
-    }
-  }
-}
-
-.topmenu-second__list_link {
+.topmenu-second__list-link {
   color: $second-color;
   font-weight: $bolder;
   border: none;
   outline: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, color 0.3s;
   &:hover,
   &:focus {
     color: $second-color;
     opacity: 0.8;
+  }
+
+  &--active {
+    color: $accent-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      opacity: 1;
+    }
   }
 }
