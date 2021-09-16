@@ -9,4 +9,16 @@
 .bottommenu-second__list {
   @include reset-list;
   display: flex;
+  justify-content: space-between;
+  font-size: $font-size-bigger;
+  font-weight: $bold;
+}
+
+.bottommenu-second__list-item {
+  height: 100%;
+}
+
+.bottommenu-second__list-icon {
+  margin-right: 11px;
+  fill: $pale-color;
 }

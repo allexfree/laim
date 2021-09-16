@@ -8,8 +8,15 @@
   background-color: $accent-color;
   font-size: $font-size-bigger;
   font-weight: $bold;
+  transition: opacity 0.3s;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .menu-btn__icon {
+  width: 22px;
+  height: 16.5px;
   margin-right: 15px;
 }

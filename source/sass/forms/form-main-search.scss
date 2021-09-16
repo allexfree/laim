@@ -2,14 +2,52 @@
 @import "./../general/mixins.scss";
 
 .form-main-search {
+  position: relative;
   width: 100%;
 }
 
 .form-main-search__label {
-  width: 100%;
+  width: inherit;
 }
 
 .form-main-search__input {
-  width: 100%;
+  width: inherit;
+  padding: 11px 19px;
+  background: $lighter-color;
+  font-size: $font-size-bigger;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &:focus .form-main-search__btn-icon {
+    fill: $accent-color
+  }
+}
+
+.form-main-search__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 11px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover .form-main-search__btn-icon,
+  &:focus .form-main-search__btn-icon {
+    fill: $accent-color;
+  }
+}
+
+.form-main-search__btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: $first-color;
+  transition: fill 0.3s;
 }
 

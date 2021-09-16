@@ -117,7 +117,7 @@
                   <div class="col-8">
                     <form class="form-main-search" method="POST">
                       <label class="form-main-search__label">
-                        <input type="search" class="form-main-search__input" name="search">
+                        <input type="search" class="form-main-search__input" name="search" placeholder="Купить молоко">
                         <button class="form-main-search__btn" type="submit" aria-label="Поиск">
                           <svg class="form-main-search__btn-icon" width="14" height="14">
                             <use href="./img/sprite/sprite.svg#loupe"></use>
@@ -135,10 +135,17 @@
                   <li class="bottommenu-second__list-item">
                     <div class="discounts">
                       <a class="discounts__link" href="#">
-                        <svg class="discounts__icon" width="14" height="14">
-                          <use href="./img/sprite/sprite.svg#percent"></use>
-                        </svg>
+                        <span class="discounts__icon">
+                          <svg class="discounts__icon-img" width="14" height="14">
+                            <use href="./img/sprite/sprite.svg#percent"></use>
+                          </svg>
+                        </span>
                         Скидки
+                        <span class="discounts__icon discounts__icon--arrow">
+                          <svg class="discounts__icon-img" width="18" height="18">
+                            <use href="./img/sprite/sprite.svg#arrow"></use>
+                          </svg>
+                        </span>
                       </a>
                       <div class="discounts-modal" hidden="hidden"></div>
                     </div>
@@ -146,8 +153,8 @@
                   <li class="bottommenu-second__list-item">
                     <div class="account">
                       <a class="account__link" href="#">
-                        <svg class="account__icon" width="14" height="14">
-                          <use href="./img/sprite/sprite.svg#heart"></use>
+                        <svg class="bottommenu-second__list-icon account__icon" width="14" height="14">
+                          <use href="./img/sprite/sprite.svg#user"></use>
                         </svg>
                         Кабинет
                       </a>
@@ -156,18 +163,18 @@
                   </li>
                   <li class="bottommenu-second__list-item">
                     <div class="favourite">
-                      <a class="favourite__link" href="#">
+                      <a class="bottommenu-second__list-icon favourite__link" href="#">
                         <svg class="favourite__icon" width="14" height="14">
-                          <use href="./img/sprite/sprite.svg#user"></use>
+                          <use href="./img/sprite/sprite.svg#heart"></use>
                         </svg>
                         Избранное
                       </a>
                       <div class="favourite-modal" hidden="hidden"></div>
                     </div>
                   </li>
-                  <li class="bottommenu-second__list-item bottommenu-second__list-item--active">
+                  <li class="bottommenu-second__list-item">
                     <div class="cart">
-                      <a class="cart__link" href="#">
+                      <a class="bottommenu-second__list-icon cart__link" href="#">
                         <svg class="cart__icon" width="14" height="14">
                           <use href="./img/sprite/sprite.svg#shopping-cart"></use>
                         </svg>
