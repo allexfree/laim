@@ -3,13 +3,12 @@
 .phone {
   display: flex;
   align-items: center;
-  margin-right: 36px;
   font-weight: $bold;
   font-size: $font-size-bigger;
   color: $second-color;
 }
 
 .phone__icon {
-  margin-right: 15px;
+  margin-right: 14px;
   fill: $third-color;
 }

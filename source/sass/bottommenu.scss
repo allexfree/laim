@@ -6,6 +6,10 @@
   padding: 15px 0;
 }
 
+.bottommenu-second {
+  padding-right: 25px;
+}
+
 .bottommenu-second__list {
   @include reset-list;
   display: flex;
@@ -18,7 +22,26 @@
   height: 100%;
 }
 
+.bottommenu-second__list-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 12px 0;
+  transition: opacity 0.3s;
+  &:hover,
+  &:focus {
+    color: $first-color;
+  }
+
+  &:hover .bottommenu-second__list-icon,
+  &:focus .bottommenu-second__list-icon {
+    fill: $accent-color;
+  }
+}
+
 .bottommenu-second__list-icon {
   margin-right: 11px;
   fill: $pale-color;
+  transition: fill 0.3s;
 }

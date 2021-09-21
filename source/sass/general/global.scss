@@ -38,10 +38,21 @@ a {
   }
 }
 
+p {
+  margin-bottom: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+svg {
+  pointer-events: none;
+  & > use {
+    pointer-events: inherit;
+  }
 }
 
 button {
@@ -54,6 +65,10 @@ button {
 .btns {
   border: none;
   background-color: transparent;
+  &--active delivery-zone__decor,
+  &--active delivery-time__decor {
+    transform: rotate(180deg);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

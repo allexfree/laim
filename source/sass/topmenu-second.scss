@@ -1,11 +1,13 @@
 @import "./general/variables.scss";
 
 .topmenu-second {
+  padding-right: 25px;
   color: $second-color;
 }
 
-.topmenu-second__list-item {
-  margin-right: 40px;
+.topmenu-second__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .topmenu-second__list-link {

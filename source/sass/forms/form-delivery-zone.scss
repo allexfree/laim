@@ -1,0 +1,53 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.form-delivery-zone {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-delivery-zone__title {
+  margin-bottom: 15px;
+  opacity: 0.3;
+}
+
+.form-delivery-zone__group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.form-delivery-zone__label {
+  max-width: 236px;
+  min-width: 51px;
+  &:first-of-type {
+    width: 236px;
+  }
+
+  &:nth-of-type(2) {
+    width: 61px;
+  }
+
+ &:last-of-type {
+   width: 51px;
+ }
+}
+
+.form-delivery-zone__input {
+  width: 100%;
+  padding: 11px 19px;
+  font-weight: $bold;
+  border: none;
+  border-radius: 10px;
+  background-color: $lighter-color;
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.form-delivery-zone__submit {
+  width: 99px;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 10px;
+}

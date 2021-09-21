@@ -1,2 +1,11 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
+
+.cart {
+  position: relative;
+}
+
+.cart__icon {
+  width: 20px;
+  height: 20px;
+}

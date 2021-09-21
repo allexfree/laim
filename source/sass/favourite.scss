@@ -1,2 +1,11 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
+
+.favourite {
+  position: relative;
+}
+
+.favourite__icon {
+  width: 20px;
+  height: 18px;
+}

@@ -5,12 +5,24 @@
 }
 
 .delivery-time__btn {
+  position: relative;
   font-size: $font-size-bigger;
   font-weight: $bold;
   color: $second-color;
 }
 
+.delivery-time__btn.btns--active {
+  .delivery-time__decor {
+    transform: rotate(180deg);
+  }
+}
+
 .delivery-time__icon {
-  margin-right: 10px;
   fill: $third-color;
+}
+
+.delivery-time__decor {
+  margin-left: 10px;
+  fill: $second-color;
+  transition: all 0.3s;
 }
