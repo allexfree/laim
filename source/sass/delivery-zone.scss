@@ -5,9 +5,11 @@
 }
 
 .delivery-zone__btn {
+  position: inherit;
   font-size: $font-size-bigger;
   font-weight: $bold;
   color: $second-color;
+  z-index: 2;
 }
 
 .delivery-zone__btn.btns--active {

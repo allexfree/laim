@@ -1,0 +1,15 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.wrapper-layout {
+  display: none;
+  &--open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+}
