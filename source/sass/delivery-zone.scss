@@ -12,12 +12,6 @@
   z-index: 2;
 }
 
-.delivery-zone__btn.btns--active {
-  .delivery-zone__decor {
-    transform: rotate(180deg);
-  }
-}
-
 .delivery-zone__icon {
   fill: $third-color;
 }

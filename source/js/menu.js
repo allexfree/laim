@@ -1,4 +1,5 @@
-import {pageBody, wrapperLayoutClickHandler} from "./utils";
+import {pageBody, wrapperLayoutClickHandler, documentPressESCHandler} from "./utils";
+
 
 const topMenuFirst = {
   self: pageBody.self.querySelector('.topmenu-first'),
@@ -6,7 +7,7 @@ const topMenuFirst = {
   items: pageBody.self.querySelectorAll('.topmenu-item-js'),
   modal: pageBody.self.querySelector('.delivery-zone-js'),
   classes: {
-    btnActive: 'btn--active'
+    btnActive: 'btns--active'
   }
 };
 
@@ -25,10 +26,12 @@ const topMenuSecond = {
 
 const topMenuFirstClickHandler = (evt) => {
   let target = evt.target;
-  console.log(target);
-  if (target !== topMenuFirst.self && target !== topMenuFirst.svgs) {
-    target.classList.toggle(topMenuFirst.classes.btnActive);
+  if (target !== topMenuFirst.self) {
+    target.classList.add(topMenuFirst.classes.btnActive);
     pageBody.wrapperLayout.classList.add(pageBody.classes.wrapperLayoutOpen);
+  } else {
+    target.classList.remove(topMenuFirst.classes.btnActive);
+    pageBody.wrapperLayout.classList.remove(pageBody.classes.wrapperLayoutOpen);
   }
 };
 
@@ -46,6 +49,7 @@ const listeners = () => {
   pageBody.wrapperLayout.addEventListener('click', wrapperLayoutClickHandler);
   topMenuFirst.self.addEventListener('click', topMenuFirstClickHandler);
   topMenuSecond.self.addEventListener('click', topMenuSecondClickHandler);
+  document.addEventListener('keydown', documentPressESCHandler);
 };
 
 export default listeners();

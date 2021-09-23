@@ -38,6 +38,16 @@
   &:focus .bottommenu-second__list-icon {
     fill: $accent-color;
   }
+
+  &:hover .bottommenu-second__list-img,
+  &:focus .bottommenu-second__list-img {
+    box-shadow: 0px 0px 5px 0px $accent-color;
+  }
+}
+
+.bottommenu-second__list-img {
+  margin-right: 11px;
+  transition: box-shadow 0.3s;
 }
 
 .bottommenu-second__list-icon {

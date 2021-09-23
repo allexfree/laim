@@ -11,12 +11,6 @@
   color: $second-color;
 }
 
-.delivery-time__btn.btns--active {
-  .delivery-time__decor {
-    transform: rotate(180deg);
-  }
-}
-
 .delivery-time__icon {
   fill: $third-color;
 }

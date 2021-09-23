@@ -2,7 +2,25 @@
 @import "../general/mixins.scss";
 
 .modal-delivery-zone {
-  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icons/square-rounded.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-50%), rotate(45deg);
+  }
 }
 
 .modal-delivery-zone__header {
@@ -14,4 +32,23 @@
 .modal-delivery-zone__link {
   color: $accent-color;
   text-decoration: underline;
+  transition: color 0.3s;
+  &:hover,
+  &:focus {
+    color: $first-color;
+  }
+
+  &:hover .modal-delivery-zone__icon,
+  &:focus .modal-delivery-zone__icon {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.modal-delivery-zone__icon {
+  margin-right: 7px;
+  fill: $accent-color;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
