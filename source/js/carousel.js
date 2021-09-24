@@ -5,7 +5,9 @@ const swp = new Swiper('.cart-slider', {
   spaceBetween: 4,
   scrollbar: {
     el: '.cart-scrollbar',
-    hide: true,
+    dragClass: 'cart-scrollbar-drag',
+    dragSize: 43,
+    hide: false,
   },
 });
 
