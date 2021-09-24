@@ -1,9 +1,11 @@
 import Swiper from 'swiper/bundle';
 
-const swp = new Swiper('.swiper', {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+const swp = new Swiper('.cart-slider', {
+  slidesPerView: 'auto',
+  spaceBetween: 4,
+  scrollbar: {
+    el: '.cart-scrollbar',
+    hide: true,
   },
 });
 
