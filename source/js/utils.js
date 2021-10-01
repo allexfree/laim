@@ -1,8 +1,7 @@
-import {topMenuFirst} from './menu';
+export const ESC_KEYCODE = 27,
+  CART_ITEM_DELETED = 'cart-list__item--deleted';
 
-const ESC_KEYCODE = 27;
-
-const pageBody = {
+export const pageBody = {
   self: document.querySelector('body'),
   wrapperLayout: document.querySelector('.wrapper-layout'),
   classes: {
@@ -10,17 +9,25 @@ const pageBody = {
   }
 };
 
-const documentPressESCHandler = (evt) => {
-  let keycode = evt.keyCode;
-  if (keycode === ESC_KEYCODE) {
-    topMenuFirst.deliveryBtn.classList.remove(topMenuFirst.classes.btnActive);
-    pageBody.wrapperLayout.classList.remove(pageBody.classes.wrapperLayoutOpen);
-  }
+export const classAdding = (element, addedClass) => {
+  element.classList.add(addedClass);
 };
 
-const wrapperLayoutClickHandler = () => {
-  topMenuFirst.deliveryBtn.classList.remove(topMenuFirst.classes.btnActive);
-  pageBody.wrapperLayout.classList.remove(pageBody.classes.wrapperLayoutOpen);
+export const classRemoving = (element, removableClass) => {
+  element.classList.remove(removableClass);
 };
 
-export {pageBody, wrapperLayoutClickHandler, documentPressESCHandler};
+export const classToggling = (element, toggleClassName) => {
+  element.classList.toggle(toggleClassName);
+};
+
+export const removeWithAnimation = (element, animationClass, delay) => {
+  element.classList.add(animationClass);
+  setTimeout(() => {
+    element.remove();
+  }, delay);
+};
+
+export const eventEdding = (nodeName, eventName, cb) => {
+  nodeName.addEventListener(eventName, cb);
+};

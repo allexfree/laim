@@ -7,6 +7,8 @@
   left: 50%;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s;
   &:before {
     content: '';
     position: absolute;

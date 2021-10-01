@@ -23,6 +23,7 @@
 }
 
 .bottommenu-second__list-link {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -32,6 +33,7 @@
   &:hover,
   &:focus {
     color: $first-color;
+    z-index: 2;
   }
 
   &:hover .bottommenu-second__list-icon,

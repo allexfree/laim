@@ -1,4 +1,5 @@
-import {pageBody, wrapperLayoutClickHandler, documentPressESCHandler} from "./utils";
+import {pageBody, ESC_KEYCODE, classAdding, classRemoving, classToggling, eventEdding} from "./utils";
+import {cart} from './cart';
 
 
 const topMenuFirst = {
@@ -27,11 +28,11 @@ const topMenuSecond = {
 const topMenuFirstClickHandler = (evt) => {
   let target = evt.target;
   if (target !== topMenuFirst.self) {
-    target.classList.add(topMenuFirst.classes.btnActive);
-    pageBody.wrapperLayout.classList.add(pageBody.classes.wrapperLayoutOpen);
+    classAdding(target, topMenuFirst.classes.btnActive);
+    classAdding(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
   } else {
-    target.classList.remove(topMenuFirst.classes.btnActive);
-    pageBody.wrapperLayout.classList.remove(pageBody.classes.wrapperLayoutOpen);
+    classRemoving(target, topMenuFirst.classes.btnActive);
+    classRemoving(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
   }
 };
 
@@ -39,18 +40,32 @@ const topMenuSecondClickHandler = (evt)=> {
   let target = evt.target;
   if (target !== topMenuSecond.list) {
     topMenuSecond.links.forEach((link)=> {
-      link.classList.remove(topMenuSecond.classes.listLinkActive);
-      target.classList.add(topMenuSecond.classes.listLinkActive);
+      classRemoving(link, topMenuSecond.classes.listLinkActive);
+      classAdding(target, topMenuSecond.classes.listLinkActive);
     })
   }
 };
 
+const wrapperLayoutClickHandler = () => {
+  classRemoving(topMenuFirst.deliveryBtn, topMenuFirst.classes.btnActive);
+  classRemoving(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
+  classRemoving(cart.modal, cart.classes.modalOpen);
+};
+
+const documentPressESCHandler = (evt) => {
+  let keycode = evt.keyCode;
+  if (keycode === ESC_KEYCODE) {
+    classRemoving(topMenuFirst.deliveryBtn, topMenuFirst.classes.btnActive);
+    classRemoving(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
+    classRemoving(cart.modal, cart.classes.modalOpen);
+  }
+};
+
 const listeners = () => {
-  pageBody.wrapperLayout.addEventListener('click', wrapperLayoutClickHandler);
-  topMenuFirst.self.addEventListener('click', topMenuFirstClickHandler);
-  topMenuSecond.self.addEventListener('click', topMenuSecondClickHandler);
-  document.addEventListener('keydown', documentPressESCHandler);
+  eventEdding(pageBody.wrapperLayout, 'click', wrapperLayoutClickHandler);
+  eventEdding(topMenuFirst.self, 'click', topMenuFirstClickHandler);
+  eventEdding(topMenuSecond.self, 'click', topMenuSecondClickHandler);
+  eventEdding(document, 'keydown', documentPressESCHandler);
 };
 
 export default listeners();
-export {topMenuFirst};

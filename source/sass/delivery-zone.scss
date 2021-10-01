@@ -9,7 +9,9 @@
   font-size: $font-size-bigger;
   font-weight: $bold;
   color: $second-color;
-  z-index: 2;
+  &:focus {
+    z-index: 2;
+  }
 }
 
 .delivery-zone__icon {

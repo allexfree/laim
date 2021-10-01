@@ -1,4 +1,4 @@
-import {pageBody} from './utils';
+import {pageBody, classToggling, classAdding} from './utils';
 
 const cart = {
   self: pageBody.self.querySelector('.cart'),
@@ -14,7 +14,8 @@ const cart = {
 
 const cartLinkClickHandler = (evt) => {
   evt.preventDefault();
-  cart.modal.classList.toggle(cart.classes.modalOpen);
+  classAdding(cart.modal, cart.classes.modalOpen);
+  classAdding(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
 };
 
 const listeners = () => {

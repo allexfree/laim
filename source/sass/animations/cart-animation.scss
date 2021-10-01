@@ -1,0 +1,15 @@
+@import "../general/variables.scss";
+@import "../general/mixins.scss";
+
+@keyframes cart-delete {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
