@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-const swp = new Swiper('.cart-slider', {
+export const cartCarousel = new Swiper('.cart-slider', {
   slidesPerView: 'auto',
   spaceBetween: 4,
   scrollbar: {
@@ -10,5 +10,3 @@ const swp = new Swiper('.cart-slider', {
     hide: false,
   },
 });
-
-export {swp};

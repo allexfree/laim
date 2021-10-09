@@ -1,4 +1,4 @@
-import {pageBody, classToggling, classAdding} from './utils';
+import {pageBody, targetTop, targetLeft, classAdding, getPosition} from './utils';
 
 const cart = {
   self: pageBody.self.querySelector('.cart'),
@@ -13,9 +13,16 @@ const cart = {
 // Functions
 
 const cartLinkClickHandler = (evt) => {
-  evt.preventDefault();
-  classAdding(cart.modal, cart.classes.modalOpen);
-  classAdding(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
+  let target = evt.target;
+
+  getPosition(target);
+
+  if (target === cart.link) {
+    classAdding(cart.modal, cart.classes.modalOpen);
+    classAdding(pageBody.wrapperLayout, pageBody.classes.wrapperLayoutOpen);
+    cart.modal.style.top = targetTop + 10 + 'px';
+    cart.modal.style.left = (targetLeft - targetLeft) - 84 + 'px';
+  }
 };
 
 const listeners = () => {

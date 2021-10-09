@@ -1,11 +1,14 @@
 export const ESC_KEYCODE = 27,
-  CART_ITEM_DELETED = 'cart-list__item--deleted';
+  CART_ITEM_DELETED = 'cart-list__item--deleted',
+  DB_URL = 'http://localhost:3004/users';
+
+export let targetTop, targetLeft;
 
 export const pageBody = {
   self: document.querySelector('body'),
-  wrapperLayout: document.querySelector('.wrapper-layout'),
+  wrapperLayout: document.querySelector('.wrapper-overlay'),
   classes: {
-    wrapperLayoutOpen: 'wrapper-layout--open'
+    wrapperLayoutOpen: 'wrapper-overlay--open'
   }
 };
 
@@ -19,6 +22,11 @@ export const classRemoving = (element, removableClass) => {
 
 export const classToggling = (element, toggleClassName) => {
   element.classList.toggle(toggleClassName);
+};
+
+export const getPosition = (target) => {
+  targetTop = target.getBoundingClientRect().top + pageBody.self.scrollTop;
+  targetLeft = target.getBoundingClientRect().left;
 };
 
 export const removeWithAnimation = (element, animationClass, delay) => {

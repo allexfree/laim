@@ -3,13 +3,14 @@
 
 .account {
   position: relative;
-  &--auth .account__icon {
-    display: none;
-  }
+}
 
-  &--auth .account__img {
-    display: block;
-  }
+.user-auth .account__icon {
+  display: none;
+}
+
+.user-auth .account__img {
+  display: block;
 }
 
 .account__icon {

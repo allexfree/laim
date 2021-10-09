@@ -7,10 +7,10 @@
 
 .discounts__link {
   padding: 0;
-  &:hover,
-  &:focus {
-    color: $first-color;
-    opacity: 0.7;
+
+  &:hover .discounts__icon:not(.discounts__icon--arrow),
+  &:focus .discounts__icon:not(.discounts__icon--arrow) {
+    background-color: $bright-color-second;
   }
 
   &:hover .discounts__icon-img,
@@ -20,7 +20,7 @@
 
   &:hover .discounts__icon--arrow svg,
   &:focus .discounts__icon--arrow svg {
-    fill: $bright-color;
+    fill: $bright-color-second;
   }
 }
 

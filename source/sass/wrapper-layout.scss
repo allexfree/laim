@@ -1,7 +1,7 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
 
-.wrapper-layout {
+.wrapper-overlay {
   display: none;
   &--open {
     position: absolute;

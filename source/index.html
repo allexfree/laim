@@ -136,12 +136,12 @@
               <nav class="bottommenu-first">
                 <div class="row align-items-center">
                   <div class="col-4">
-                    <button class="menu-btn" type="button">
+                    <a class="menu-btn" href="#">
                       <svg class="menu-btn__icon" width="22" height="16.5">
                         <use href="./img/sprite/sprite.svg#loup-catalog"></use>
                       </svg>
                       Каталог
-                    </button>
+                    </a>
                   </div>
                   <div class="col-8">
                     <form class="form-main-search" method="POST">
@@ -213,6 +213,19 @@
                         Корзина
                       </a>
                       <div class="cart-modal modal-cart-js">
+                        <section class="cart-section cart-section--auth">
+                          <h3 class="cart-title">Здравствуйте, <span>Михаил!</span></h3>
+                          <div class="cart-section-body">
+                            <svg class="cart-section-icon" width="74" height="74">
+                              <use href="./img/sprite/sprite.svg#diet"></use>
+                            </svg>
+                            <p class="cart-section-text">Ваша корзина пуста</p>
+                            <a class="cart-section-link" href="#">Перейти в каталог</a>
+                            <p class="cart-section-text cart-section-text--note">Выбирайте из более чем 1000 свежих товаров!</p>
+                            <a class="cart-section-link cart-section-link--order" href="#">Повторить прошлый заказ</a>
+                            <p class="cart-section-text cart-section-text--note">Вы можете быстро добавить в корзину ваши предыдущие покупки</p>
+                          </div>
+                        </section>
                         <section class="cart-section">
                           <h3 class="cart-title">Бакалея</h3>
                           <ul class="cart-list">
@@ -312,6 +325,32 @@
                           </ul>
                         </section>
                         <section class="cart-section">
+                          <h3 class="cart-title">Вода, напитки</h3>
+                          <ul class="cart-list">
+                            <li class="cart-list__item" tabindex="0">
+                              <div class="cart-img">
+                                <img src="./img/pocket.jpg" width="29" height="19" alt="Товар.">
+                              </div>
+                              <label class="cart-count">
+                                <button class="btns cart-count__btn cart-count__btn--plus count-btn-js" type="button"
+                                        aria-label="Увеличить количество">+
+                                </button>
+                                <input class="cart-count__input" type="text" min="1" max="9" name="amount" value="2">
+                                <button class="btns cart-count__btn cart-count__btn--minus count-btn-js" type="button"
+                                        aria-label="Уменьшить количество">-
+                                </button>
+                              </label>
+                              <div class="cart-content">
+                                <p class="cart-product">Макаронные изделия Макфа триколлини</p>
+                                <dl class="cart-content__footer">
+                                  <dt class="cart-price">120 руб.</dt>
+                                  <dd class="cart-weight">450 гр.</dd>
+                                </dl>
+                              </div>
+                              <button class="btns close-btn" type="button" aria-label="Закрыть"></button>
+                            </li>
+                          </ul>
+                        </section><section class="cart-section">
                           <h3 class="cart-title">Другие товары</h3>
                           <ul class="cart-list">
                             <li class="cart-list__item" tabindex="0">
@@ -435,7 +474,7 @@
   </div>
 
 <!-- Скрытые элементы -->
-  <div class="wrapper-layout">
+  <div class="wrapper-overlay">
 
   </div>
 <!-- //Скрытые элементы -->
