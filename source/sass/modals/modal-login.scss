@@ -1,0 +1,10 @@
+@import "../general/variables.scss";
+@import "../general/mixins.scss";
+
+.modal-login {
+  display: none;
+  &--open {
+    display: flex;
+    background-color: $second-color;
+  }
+}

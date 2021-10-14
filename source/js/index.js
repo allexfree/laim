@@ -9,3 +9,4 @@ import menu from './menu';
 import forms from './forms';
 import btns from './btns';
 import cart from './cart';
+import login from './login';
