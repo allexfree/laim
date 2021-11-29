@@ -4,7 +4,15 @@
 .modal-login {
   display: none;
   &--open {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    background-color: $second-color;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: transparent;
   }
 }

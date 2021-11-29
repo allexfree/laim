@@ -1,17 +1,14 @@
 {
   "users": [
     {
-      "role": "admin",
       "login": "admin",
       "pass": "admin"
     },
     {
-      "role": "manager",
       "login": "manager",
       "pass": "manager"
     },
     {
-      "role": "user",
       "login": "user",
       "pass": "user"
     }

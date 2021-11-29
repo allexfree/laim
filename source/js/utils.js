@@ -8,7 +8,8 @@ export const pageBody = {
   self: document.querySelector('body'),
   wrapperLayout: document.querySelector('.wrapper-overlay'),
   classes: {
-    wrapperLayoutOpen: 'wrapper-overlay--open'
+    wrapperLayoutOpen: 'wrapper-overlay--open',
+    auth: 'user-auth'
   }
 };
 

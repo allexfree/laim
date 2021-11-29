@@ -475,22 +475,21 @@
 
 <!-- Скрытые элементы -->
 
-  <div class="wrapper-overlay">
-    <div class="modal-login modal-login-js">
-      <form class="form-login" action="">
-        <input class="form-login__input hidden-input-js" type="text" name="user-role" hidden>
-        <input class="form-login__input hidden-input-js" type="text" name="user-name" hidden>
-        <input class="form-login__input hidden-input-js" type="text" name="user-pass" hidden>
-        <p>Вы не авторизованы</p>
-        <label>
-          <input class="form-login__input input-js" type="text" name="login" placeholder="Введите логин">
-        </label>
-        <label>
-          <input class="form-login__input input-js" type="text" name="pass" placeholder="Введите пароль">
-        </label>
-        <button type="submit">Отправить</button>
-      </form>
-    </div>
+  <div class="wrapper-overlay"></div>
+
+  <div class="modal-login modal-login-js">
+    <form class="form-login" action="">
+      <input class="form-login__input hidden-input-js" type="text" name="user-name" hidden>
+      <input class="form-login__input hidden-input-js" type="text" name="user-pass" hidden>
+      <p>Вы не авторизованы</p>
+      <label>
+        <input class="form-login__input input-js" type="text" name="login" placeholder="Введите логин" autofocus>
+      </label>
+      <label>
+        <input class="form-login__input input-js" type="text" name="pass" placeholder="Введите пароль">
+      </label>
+      <button class="form-login-submit-js" type="submit">Отправить</button>
+    </form>
   </div>
 
 <!-- //Скрытые элементы -->
