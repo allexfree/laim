@@ -1,0 +1,23 @@
+/* Colors */
+/* Fonts */
+/* Media */
+.delivery-time {
+  position: relative;
+}
+
+.delivery-time__btn {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.delivery-time__icon {
+  fill: #A6D914;
+}
+
+.delivery-time__decor {
+  margin-left: 10px;
+  fill: #FFFFFF;
+  transition: all 0.3s;
+}

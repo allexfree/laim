@@ -1,0 +1,23 @@
+/* Colors */
+/* Fonts */
+/* Media */
+.menu-btn {
+  max-width: 135px;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 10px;
+  background-color: #A1D214;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity 0.3s;
+}
+.menu-btn:hover, .menu-btn:focus {
+  opacity: 0.8;
+  color: inherit;
+}
+
+.menu-btn__icon {
+  width: 22px;
+  height: 16.5px;
+  margin-right: 15px;
+}

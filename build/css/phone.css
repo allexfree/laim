@@ -1,0 +1,15 @@
+/* Colors */
+/* Fonts */
+/* Media */
+.phone {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.phone__icon {
+  margin-right: 14px;
+  fill: #A6D914;
+}

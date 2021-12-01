@@ -1,0 +1,26 @@
+/* Colors */
+/* Fonts */
+/* Media */
+.delivery-zone {
+  position: relative;
+}
+
+.delivery-zone__btn {
+  position: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.delivery-zone__btn:focus {
+  z-index: 2;
+}
+
+.delivery-zone__icon {
+  fill: #A6D914;
+}
+
+.delivery-zone__decor {
+  margin-left: 10px;
+  fill: #FFFFFF;
+  transition: all 0.3s;
+}

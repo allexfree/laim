@@ -1,0 +1,53 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.discounts {
+  position: relative;
+}
+
+.discounts__link {
+  padding: 0;
+}
+.discounts__link:hover .discounts__icon:not(.discounts__icon--arrow), .discounts__link:focus .discounts__icon:not(.discounts__icon--arrow) {
+  background-color: #FF5C00;
+}
+.discounts__link:hover .discounts__icon-img, .discounts__link:focus .discounts__icon-img {
+  fill: #FFFFFF;
+}
+.discounts__link:hover .discounts__icon--arrow svg, .discounts__link:focus .discounts__icon--arrow svg {
+  fill: #FF5C00;
+}
+
+.discounts__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 9px;
+  background-color: #FFC709;
+  border-radius: 10px;
+}
+.discounts__icon--arrow {
+  display: unset;
+  width: auto;
+  height: auto;
+  margin-right: 0;
+  margin-left: 8px;
+  background-color: unset;
+  border-radius: unset;
+}
+.discounts__icon--arrow .discounts__icon-img {
+  fill: #FFC709;
+}
+
+.discounts__icon-img {
+  width: 18px;
+  height: 24px;
+  transition: fill 0.3s;
+}

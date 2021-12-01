@@ -1,0 +1,31 @@
+/* Colors */
+/* Fonts */
+/* Media */
+.topmenu-second {
+  padding-right: 25px;
+  color: #FFFFFF;
+}
+
+.topmenu-second__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topmenu-second__list-link {
+  color: #FFFFFF;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: opacity 0.3s, color 0.3s;
+}
+.topmenu-second__list-link:hover, .topmenu-second__list-link:focus {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.topmenu-second__list-link--active {
+  color: #A1D214;
+}
+.topmenu-second__list-link--active:hover, .topmenu-second__list-link--active:focus {
+  color: #A1D214;
+  opacity: 1;
+}
